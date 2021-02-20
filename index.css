@@ -136,11 +136,3 @@ section button{
     overflow: hidden;
     margin-right: 10px;
 }
-
-section button .editBtn{
-    background-color: var(--success);
-}
-
-section button .deleteBtn{
-    background-color: var(--danger);
-}

@@ -21,16 +21,11 @@
             <div id="notes">
 
                 <div id="note">
-                    <p id="note-title">Say something!</p>
-                    <button id="${index}" class="editNote" onclick="editBtn(this.id)">Edit</button>
-                    <button id="${index}" class="deleteNote" onclick="deleteBtn(this.id)">Delete</button>
+                    <p id="note-title">${element.text}</p>
+                    <button id="${index}" class="editBtn" onclick="editNote(this.id)">Edit</button>
+                    <button id="${index}" class="deleteBtn" onclick="deleteNote(this.id)">Delete</button>
                 </div>
-                <!-- <div id="note">
-                    <p id="note-title">Say something!</p>
-                    <button id="${index}" class="editNote" onclick="editBtn(this.id)">Edit</button>
-                    <button id="${index}" class="deleteNote" onclick="deleteBtn(this.id)">Delete</button>
-                </div> -->
-
+                
             </div>
         </div>
     </section>
