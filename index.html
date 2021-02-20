@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myList</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 class="todo">what are your <span>PLANS FOR TODAY?</span></h1>
+    <form>
+        <div class="container">
+            <input type="text" id="note-text" placeholder="What plans have you today?">
+            <button id="addBtn">Submit</button>
+        </div>
+    </form>
+
+    <section>
+        <div class="container">
+            <div id="notes">
+
+                <div id="note">
+                    <p id="note-title">Say something!</p>
+                    <button id="${index}" class="editNote" onclick="editBtn(this.id)">Edit</button>
+                    <button id="${index}" class="deleteNote" onclick="deleteBtn(this.id)">Delete</button>
+                </div>
+                <!-- <div id="note">
+                    <p id="note-title">Say something!</p>
+                    <button id="${index}" class="editNote" onclick="editBtn(this.id)">Edit</button>
+                    <button id="${index}" class="deleteNote" onclick="deleteBtn(this.id)">Delete</button>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

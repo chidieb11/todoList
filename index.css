@@ -1,0 +1,146 @@
+:root{
+    --primary: purple;
+    --secondary: grey;
+    --white: #fff;
+    --dark: #24252a;
+    --danger: red;
+    --success: green;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark);
+    margin-top: 5px;
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+        background: #fff;
+    }
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* header */
+.todo{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    @media (max-width: 480px) {
+        display: grid;
+        grid-template: row;
+    }
+}
+
+span{
+    background-color: var(--secondary);
+    border-radius: 3px;
+}
+
+/* form */
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form .container #note-text{
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+form .container #note-text, #addBtn{
+    padding: 10px;
+    font-size: 16px;
+}
+
+form .container #note-text{
+    outline: none;
+    border: none;
+}
+
+form .container #addBtn{
+    background-color: var(--success);
+    color: var(--white);
+    outline: none;
+    border: none;
+}
+
+form .container #addBtn:hover{
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+/* section */
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+section #notes{
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+section #notes{
+    background-color: var(--secondary);
+}
+
+section #note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--dark);
+}
+
+#notes > *{
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 7px;
+    /* border: 1px solid #777; */
+    border-radius: 3px;
+}
+
+section #note p{
+    font-size: 30px;
+    color: var(--white);
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+section button{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+    border: none;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+section button .editBtn{
+    background-color: var(--success);
+}
+
+section button .deleteBtn{
+    background-color: var(--danger);
+}
